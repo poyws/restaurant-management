@@ -10,7 +10,7 @@ Pedidos Ativos: Exibição dos pedidos em andamento, com atualização automáti
 
 Relatório Financeiro: Visualização das vendas semanais através de um gráfico, além de informações diárias de vendas e quantidade de pedidos.
 
-**# Tecnologias Utilizadas**:
+# Tecnologias Utilizadas:
 HTML5: Estrutura do site.
 
 CSS3: Estilização e layout responsivo.
