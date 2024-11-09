@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestão de Restaurante</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <h1>RestaurantePro</h1>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="dashboard">
+      <div class="card">
+        <h3>Cardápio Digital</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Filé à Parmegiana</h4>
+            <p class="price">R$ 45,90</p>
+            <button onclick="addToOrder(1)">Adicionar</button>
+          </div>
+          <div class="menu-item">
+            <h4>Salmão Grelhado</h4>
+            <p class="price">R$ 55,90</p>
+            <button onclick="addToOrder(2)">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Controle de Mesas</h3>
+        <div class="tables-grid">
+          <div class="table" onclick="toggleTable(1)">Mesa 1<span class="table-status"></span></div>
+          <div class="table" onclick="toggleTable(2)">Mesa 2<span class="table-status"></span></div>
+          <!-- Adicione mais mesas conforme necessário -->
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Pedidos Ativos</h3>
+        <div class="orders-list" id="ordersList"></div>
+      </div>
+
+      <div class="card">
+        <h3>Relatório Financeiro</h3>
+        <canvas id="salesChart"></canvas>
+        <div class="stats">
+          <div class="stat">
+            <h4>Vendas Hoje</h4>
+            <p>R$ 1.590,00</p>
+          </div>
+          <div class="stat">
+            <h4>Pedidos</h4>
+            <p>32</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
